@@ -1,0 +1,127 @@
+:root {
+    --paper: #f8f5ef;
+    --surface: #f0ede5;
+    --ink: #1d1a16;
+    --stone: #7a7066;
+    --rule: #d8d1c5;
+    --accent: #7b3928;
+    --sherif-font: 'Georgia', 'Garamond', 'Times New Roman', serif;
+    --sans-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--sans-font);
+    background-color: var(--paper);
+    color: var(--ink);
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+header {
+    background-color: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+header img {
+    border-radius: 50%;
+    border: 10px solid var(--accent);
+    margin-bottom: 0.75rem;
+}
+
+header h1 {
+    font-family: var(--sherif-font);
+    font-size: 2.2rem;
+    color: var(--ink);
+    margin-bottom: 0.25rem;
+}
+
+header p em {
+    color: var(--stone);
+    font-style: italic;
+    font-size: 1.05rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 1.5rem 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+section {
+    background-color: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+}
+
+section h2 {
+    font-family: var(--sherif-font);
+    font-size: 1.5rem;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--rule);
+}
+
+section p {
+    color: var(--ink);
+    font-size: 1rem;
+}
+
+section p strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+ol,
+ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    color: var(--ink);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #5a2a1c;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    color: var(--stone);
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+}
+
+.apurbo h2,
+.apurbo li {
+    color: red;
+}
